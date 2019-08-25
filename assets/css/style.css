@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+    color: #777777;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3{
+    font-family: 'Georgia', Times, Times-New-Roman, serif;
+    color: #4aaaa5;
+    width: 300px;
+}
+
+li{
+    color: white;
+    display: inline;
+}
+
+ul{
+    display: inline;
+    list-style: none;
+    width: 300px;
+}
+
+nav{
+    float: right;
+    width: 300px;
+}
+
+img{
+    float: left;
+    margin: 80px 10px 20px 10px;
+}
+
+body{
+    width: 960px;
+}
+
+article{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    padding: 60px;
+    text-align: left;
+}
+
+footer{
+    background-color: #666666;
+    padding: 50px;
+}
+
+.bkimg{
+    background-image: url("../images/mooning/mooning/mooning.png");
+}
+
+.stripe{
+    width: 900px;
+    margin: 0 auto;
+    height: 3px;
+}
+
+.footerbox{
+    clear: both;
+    background-color: #4aaaa5;
+    width: 960px;
+    margin: 0 auto;
+    height: 10px;
+}
+
+.longbox{
+    background-color: #ffffff;
+    margin: 0 auto;
+    width: 960px;
+}
+
+.boxhold{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.whitebox{
+    background-color: white;
+    display: block;
+    margin: 10px 50px 10px 50px;
+    width: 800px;
+}
+
+.center{
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+    width: 10%;
+}
+
+.buttons{
+    justify-content: right;
+    width: 150px;
+}
+
+.button1{
+    background-color: white;
+    color: black;
+    border: 2px solid #4cAF50;
+}
+.button1:hover{
+    background-color: #4cAF50;
+    color: white;
+}
+.button2{
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+.button2:hover{
+    background-color: #008CBA;
+    color: white;
+}
+.button3{
+    background-color: white;
+    color: black;
+    border: 2px solid #f44336;
+}
+.button3:hover{
+    background-color: #f44336;
+    color: white;
+}
+
+.clearboth{
+    clear: both;
+    float: left;
+}
+
+#totheleft{
+    float: left;
+    word-wrap: initial;
+}
+
+#name{
+    float: left;
+    margin: 0; 
+    color: white;
+    background-color: #4aaaa5;
+}
+
+#spacer{
+    margin: 0px 50px 0px 50px;
+}
+
+#centerm{
+    backgound-color: #666666;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#emailAddress{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fullname{
+    clear: both;
+    float: center;
+    margin: 0px 20px 10px 20px;
+}
+
+#message{
+    background-color: white;
+    float: center;
+    width: 400px;
+    height: 400px;
+    align-content: flex-start;
+}
+
+@media only screen and (max-width: 980px) {
+    *, .longbox{
+        width: 100%;
+     }
+    }
+    
+
+@media only screen and (max-width: 768px) {
+    *, .longbox{
+        width: 78.3%;
+     }
+    }
+    
+    @media only screen and (max-width: 640px) {
+    header, .longbox, nav{
+        margin-left: 0;
+        position: static;
+        flex-wrap: wrap;
+        flex-direction: row;
+         }
+         
+    *, .longbox, nav{
+        width: 65.3%;
+     } 
+    }
